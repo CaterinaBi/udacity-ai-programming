@@ -23,3 +23,25 @@ Using our Python skills, we had to determine:
 ## Forecasted difficulties
 
 It is known that certain breeds of dogs look very similar. Udacity warned us about some breeds which can be easily misclassified: Great Pyrenees and Kuvasz, German Shepherd and Malinois, Beagle and Walker Hound, amongst others. It goes without saying that the more images of two similar-looking dog breeds that the algorithm *learns* from, the more likely the algorithm will be able to distinguish between those two breeds.
+
+## Program Outline
+
+1. Time the program
+   - Use Time Module to compute program runtime
+2. Get program Inputs from the user
+   - Use command line arguments to get user inputs
+3. Create Pet Images Labels
+   - Use the pet images filenames to create labels
+   - Store the pet image labels in a data structure (e.g., a dictionary)
+4. Create Classifier Labels and Compare Labels
+   - Use the Classifier function to classify the images and create the classifier labels
+   - Compare Classifier Labels to Pet Image Labels
+   - Store Pet Labels, Classifier Labels, and their comparison in a complex data structure (e.g. dictionary of lists)
+5. Classifying Labels as "Dogs" or "Not Dogs"
+   - Classify all Labels as "Dogs" or "Not Dogs" using dognames.txt file
+   - Store new classifications in the complex data structure (e.g. dictionary of lists)
+6. Calculate the Results
+   - Use Labels and their classifications to determine how well the algorithm worked on classifying images
+7. Print the Results
+
+The tasks in 1-7 were to be repeated for each of the three image classification algorithms provided.
