@@ -20,4 +20,6 @@ Using our Python skills, we had to determine:
 
 ➡️ how long each algorithm took to solve the classification problem (*runtime*).
 
+## Forecasted difficulties
 
+It is known that certain breeds of dogs look very similar. Udacity warned us about some breeds which can be easily misclassified: Great Pyrenees and Kuvasz, German Shepherd and Malinois, Beagle and Walker Hound, amongst others. It goes without saying that the more images of two similar-looking dog breeds that the algorithm *learns* from, the more likely the algorithm will be able to distinguish between those two breeds.
