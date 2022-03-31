@@ -1,4 +1,6 @@
 # Use a Pre-Trained Image Classifier to Identify Dog Breeds
+![This is an image taken from the Udacity website](images/udacity_project.png)
+
 This is the first capstone project I worked on while taking the '[AI Programming with Python](https://www.udacity.com/course/ai-programming-python-nanodegree--nd089)' nanodegree at [Udacity](https://www.udacity.com/).
 
 ## Project goal
