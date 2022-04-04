@@ -37,9 +37,6 @@ def main():
     # TODO 0: Measures total program runtime by collecting start time
     # Sets start time
     start_time = time()
-
-    # Replace sleep(75) below with code you want to time
-    sleep(1)
     
     # TODO 1: Define get_input_args function within the file get_input_args.py
     # This function retrieves 3 Command Line Arugments from user as input from
@@ -113,6 +110,7 @@ def main():
     # and incorrectly classified breeds (if requested)
     print_results(results, results_stats, None, True, True)
     
+    # Check time to code
     # TODO 0: Measure total program runtime by collecting end time
     end_time = time()
     
