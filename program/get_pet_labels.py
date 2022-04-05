@@ -69,7 +69,7 @@ def get_pet_labels(image_dir):
                   pet_label += word.lower() + " "
             
                   # Strips off starting/trailing whitespace characters 
-                  pet_label = pet_label.strip()
+                  #pet_label = pet_label.strip()
 
        # If filename doesn't already exist in dictionary: adds it and its pet label
        # Else: prints an error message indicating duplicate files
