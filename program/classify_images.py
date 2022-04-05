@@ -81,3 +81,23 @@ def classify_images(images_dir, results_dic, model):
               
        # defines truth as pet image label 
        truth = results_dic[key][0] 
+        
+       # Uses the extend list function to add the classifier label (model_label)
+       # and the value of 1 (match between pet image label and the classifier label)
+       # to the results_dic dictionary for the key indicated by the variable key 
+       #
+       # If exact match is found
+       if truth in model_label:
+            results_dic[key].extend([model_label,1])
+       # No match is found
+       else:
+            results_dic[key].extend([model_label,0])
+            
+    # Iterates through the list to print the results for each filename
+    for key in results_dic:
+        print("\nFile Name=", key, "\nPet Image Label=", results_dic[key][0],
+          "\nClassifier Label=", results_dic[key][1], "\nMatch=",
+          results_dic[key][2])
+    
+    # No return needed (dic is a mutable data structure)
+    return None
