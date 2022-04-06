@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: CaterinaBi
 # DATE CREATED: 05.04.2022                              
-# REVISED DATE: 
+# REVISED DATE: 06.04.2022
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
@@ -88,10 +88,10 @@ def classify_images(images_dir, results_dic, model):
        #
        # If exact match is found
        if truth in model_label:
-            results_dic[key].extend([model_label,1])
+            results_dic[key].extend([model_label,0])
        # No match is found
        else:
-            results_dic[key].extend([model_label,0])
+            results_dic[key].extend([model_label,1])
             
     # Iterates through the list to print the results for each filename
     for key in results_dic:
