@@ -76,9 +76,12 @@ A similar mis-classification was done by AlexNet, as illustrated below:
 
 ![This is an image that compares beagles and english foxhounds](images/dog_comparison3.png)
 
-Conversely, the mis-classifications done exclusively by AlexNet and/or ResNet were of breeds which shared less distinctive features:
+Conversely, most mis-classifications done exclusively by AlexNet and/or ResNet were of breeds which shared less distinctive features:
 
-![This is an image that compares boston terriers and basenjis](images/dog_comparison4.png)
 ![This is an image that compares golden retrievers and tibetan mastiffs](images/dog_comparison5.png)
 ![This is an image that compares golden retrievers and afghan hounds](images/dog_comparison6.png)
 ![This is an image that compares golden retrievers and leonbergs](images/dog_comparison7.png)
+
+While one of the classifications done by AlexNet, which classified a boston terrier as a basenji, was really ill-advised - the two breeds don't even share similar colours.
+
+![This is an image that compares boston terriers and basenjis](images/dog_comparison4.png)
