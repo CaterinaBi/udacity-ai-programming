@@ -216,8 +216,8 @@ def check_classifying_labels_as_dogs(results_dic):
                       results_dic[key][4]))
 
         # Prints Total Number of Images - expects 40 from pet_images folder
-        print("\n# Total Images of dogs",n_match + n_notmatch, "# Breed matches:",n_match ,
-              "# Breed mismatches:",n_notmatch)
+        print("\n# Total Images of dogs",n_match + n_notmatch, "# Correctly identified 'is dog':",n_match ,
+              "# Wrongly identifies 'is dog':",n_notmatch)
 
 
 
