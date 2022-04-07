@@ -72,6 +72,10 @@ The only breeds mis-identified by the VGG architecture feature impressive simila
 ![This is an image that compares great pyrenees and kuvaszs](images/dog_comparison1.png)
 ![This is an image that compares beagles and walker hounds](images/dog_comparison2.png)
 
+A similar mis-classification was done by AlexNet, as illustrated below:
+
+![This is an image that compares beagles and english foxhounds](images/dog_comparison3.png)
+
 Conversely, the mis-classifications done exclusively by AlexNet and/or ResNet were of breeds which shared less distinctive features:
 
 ![This is an image that compares beagles and english foxhounds](images/dog_comparison3.png)
