@@ -188,34 +188,36 @@ def check_classifying_labels_as_dogs(results_dic):
         n_notmatch = 0
     
         # Prints all Matches first
-        print("\nMATCH:")
+        # print("\nMATCH (correctly classified dog breeds):")
         for key in results_dic:
 
-            # Prints only if a Match Index 2 == 1
-            if results_dic[key][2] == 1:
-
-                # Increments Match counter
-                n_match += 1
-                print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
+            # Takes into consideration only images of dogs and properly identified breeds
+            if results_dic[key][4] == 1:
+                if results_dic[key][3] == results_dic[key][4]:
+                    # Increments Match counter
+                    n_match += 1
+                    print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
                       results_dic[key][0], results_dic[key][1], results_dic[key][3], 
                       results_dic[key][4]))
-
+                else:
         # Prints all NOT-Matches next
-        print("\nMISMATCH:")
-        for key in results_dic:
+        #print("\nMISMATCH (wrongly classified dog breeds):")
+        #for key in results_dic:
         
-            # Prints only if NOT-a-Match Index 2 == 0 
-            if results_dic[key][2] == 0:
- 
-                # Increments Not-a-Match counter
-                n_notmatch += 1
-                print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
+            # Takes into consideration only images of dogs
+            #if results_dic[key][3] == 1:
+                
+                # Takes into consideration wrongly identified breeds
+                # if results_dic[key][3] != results_dic[key][4]:
+                    # Increments Not-a-Match counter
+                    n_notmatch += 1
+                    print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
                       results_dic[key][0], results_dic[key][1], results_dic[key][3], 
                       results_dic[key][4]))
 
         # Prints Total Number of Images - expects 40 from pet_images folder
-        print("\n# Total Images",n_match + n_notmatch, "# Matches:",n_match ,
-              "# NOT Matches:",n_notmatch)
+        print("\n# Total Images of dogs",n_match + n_notmatch, "# Breed matches:",n_match ,
+              "# Breed mismatches:",n_notmatch)
 
 
 
