@@ -44,3 +44,23 @@ It is known that certain breeds of dogs look very similar. Udacity warned us abo
 7. Print the Results
 
 The tasks in 1-7 were to be repeated for each of the three image classification algorithms provided.
+
+## Results
+
+The total images to classify were 40, 10 of which were not dogs.
+
+# Results Summary for CNN Model Architecture VGG
+
+Matches: 87.5%
+Correct identifications of dogs: 100.0%
+Correct identifications of dog breeds: 93.33333333333333%
+Correct *non* dogs: 100.0%
+
+Incorrect dog breed assignments:
+1- Real: great pyrenees. Classifier: kuvasz.
+2- Real: beagle. Classifier: walker hound, walker foxhound.
+
+The mis-identified breeds feature impressive similarities. Comparative images are provided below:
+
+![This is an image that compares great pyrenees and kuvaszs](images/dog_comparison1.png)
+![This is an image that compares beagles and walker hounds](images/dog_comparison2.png)
