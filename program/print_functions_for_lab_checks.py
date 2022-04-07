@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 # */AIPND/intropylab-classifying-images/print_functions_for_lab_checks.py
 #                                                                             
-# PROGRAMMER: Jennifer S.                                                    
+# ORIGINAL PROGRAMMER: Jennifer S.  
+# PROGRAMMER: CaterinaBi
 # DATE CREATED: 05/14/2018                                  
-# REVISED DATE:             <=(Date Revised - if any)                         
+# REVISED DATE: 07.04.2022                        
 # PURPOSE:  This set of functions can be used to check your code after programming 
 #           each function. The top section of each part of the lab contains
 #           the section labeled 'Checking your code'. When directed within this
@@ -53,29 +54,34 @@ def check_creating_pet_image_labels(results_dic):
     else:
         # Code to print 10 key-value pairs (or fewer if less than 10 images)
         # & makes sure there are 40 pairs, one for each file in pet_images/
-        stop_point = len(results_dic)
-        if stop_point > 10:
-            stop_point = 10
-        print("\nPet Image Label Dictionary has", len(results_dic),
-              "key-value pairs.\nBelow are", stop_point, "of them:")
-    
+        # stop_point = len(results_dic)
+        # if stop_point > 10:
+        #    stop_point = 10
+        print("\nPet Image Label Dictionary (results_dic) has", len(results_dic),
+              "key-value pairs.")
+        #      \nBelow are", stop_point, "of them:")
+        
+        # CaterinaBi: commented out what follows because didn't add any value to the program
         # counter - to count how many labels have been printed
-        n = 0
+        #n = 0
     
         # for loop to iterate through the dictionary
-        for key in results_dic:
+        #for key in results_dic:
  
             # prints only first 10 labels
-            if n < stop_point:
-                print("{:2d} key: {:>30}  label: {:>26}".format(n+1, key,
-                      results_dic[key][0]) )
+        #   if n < stop_point:
+        #        print("{:2d} key: {:>30}  label: {:>26}".format(n+1, key,
+        #              results_dic[key][0]) )
 
                 # Increments counter
-                n += 1
+        #        n += 1
             
             # If past first 10 (or fewer) labels the breaks out of loop
-            else:
-                break
+        #    else:
+        #        break
+        
+        # CaterinaBi: Adds text that explains what is being printed
+        print("Pet image labels and Classifier labels have been created and compared. The match/mismatch results are as follows:")
 
 
 def check_classifying_images(results_dic):
@@ -95,11 +101,16 @@ def check_classifying_images(results_dic):
      Nothing - just prints to console  
 
     """
+        
+    # Print explanatory label
+    print("\nA summary of matches and mismatches is provided below:")
+    
     if results_dic is None:
         print("* Doesn't Check the Results Dictionary because 'classify_images' hasn't been defined.")
     elif len(results_dic[next(iter(results_dic))]) < 2:
         print("* Doesn't Check the Results Dictionary because 'classify_images' hasn't been defined.")
     else:
+        
         # Code for checking classify_images -
         # Checks matches and not matches are classified correctly
         # Checks that all 40 images are classified as a Match or Not-a Match
@@ -107,9 +118,9 @@ def check_classifying_images(results_dic):
         # Sets counters for matches & NOT-matches
         n_match = 0
         n_notmatch = 0
-    
+        
         # Prints all Matches first
-        print("\n     MATCH:")
+        print("\nMATCHES:")
         for key in results_dic:
 
             # Prints only if a Match Index 2 == 1
@@ -117,11 +128,11 @@ def check_classifying_images(results_dic):
 
                 # Increments Match counter
                 n_match += 1
-                print("\n{:>30}: \nReal: {:>26}   Classifier: {:>30}".format(key, 
+                print("\n{}: \nReal: {}   \nClassifier: {}".format(key, 
                       results_dic[key][0], results_dic[key][1]))
 
         # Prints all NOT-Matches next
-        print("\n NOT A MATCH:")
+        print("\nMISMATCHES:")
         for key in results_dic:
         
             # Prints only if NOT-a-Match Index 2 == 0 
@@ -129,7 +140,7 @@ def check_classifying_images(results_dic):
  
                 # Increments Not-a-Match counter
                 n_notmatch += 1
-                print("\n{:>30}: \nReal: {:>26}   Classifier: {:>30}".format(key,
+                print("\n{}: \nReal: {}   \nClassifier: {}".format(key,
                       results_dic[key][0], results_dic[key][1]))
 
         # Prints Total Number of Images - expects 40 from pet_images folder
