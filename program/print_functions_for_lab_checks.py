@@ -169,6 +169,9 @@ def check_classifying_labels_as_dogs(results_dic):
     Returns:
      Nothing - just prints to console  
     """
+    # Prints explanatory label
+    print("\nThe following lines check whether the classifier correctly distinguished 'dogs' from 'non dogs':")
+    
     if results_dic is None:
         print("* Doesn't Check the Results Dictionary because 'adjust_results4_isadog' hasn't been defined.")
     elif len(results_dic[next(iter(results_dic))]) < 4 :
