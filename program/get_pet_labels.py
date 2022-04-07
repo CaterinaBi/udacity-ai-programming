@@ -65,11 +65,11 @@ def get_pet_labels(image_dir):
           # Loops to check if word in pet name is only alphabetic characters
           # If true: appends word to pet_label separated by space 
           for word in image_name:
-              if word.isalpha():
-                  pet_label += word.lower() + " "
-            
-                  # Strips off starting/trailing whitespace characters 
-                  #pet_label = pet_label.strip()
+              if word.isalpha(): 
+                # Adds whitespace between two words
+                pet_label += word.lower() + " "
+          # Strips off ending whitespace character in newly-created label
+          pet_label = pet_label.rstrip()
 
        # If filename doesn't already exist in dictionary: adds it and its pet label
        # Else: prints an error message indicating duplicate files
@@ -80,7 +80,7 @@ def get_pet_labels(image_dir):
             print("** Warning: Duplicate files exist in directory:",in_files[idx])
                 
     #Iterates through a dictionary and prints all keys + their associated values
-    print("\nPrinting all key-value pairs in dictionary results_dic:")
+    print("\nAll key-value pairs in dictionary results_dic are as follows:\n")
     for key in results_dic:
           print("Filename=", key, "   Pet Label=", results_dic[key][0])
     
