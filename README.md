@@ -49,7 +49,7 @@ The tasks in 1-7 were to be repeated for each of the three image classification 
 
 The total images to classify were 40, 10 of which were not dogs.
 
-# Results Summary for CNN Model Architecture VGG
+### Results Summary for CNN Model Architecture VGG
 
 Matches: 87.5%
 
@@ -59,7 +59,7 @@ Correct identifications of dog breeds: 93.33333333333333%
 
 Correct *non* dogs: 100.0%
 
-Incorrect dog breed assignments:
+**Incorrect dog breed assignments**:
 
 1- Real: great pyrenees. Classifier: kuvasz.
 
