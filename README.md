@@ -52,12 +52,17 @@ The total images to classify were 40, 10 of which were not dogs.
 # Results Summary for CNN Model Architecture VGG
 
 Matches: 87.5%
+
 Correct identifications of dogs: 100.0%
+
 Correct identifications of dog breeds: 93.33333333333333%
+
 Correct *non* dogs: 100.0%
 
 Incorrect dog breed assignments:
+
 1- Real: great pyrenees. Classifier: kuvasz.
+
 2- Real: beagle. Classifier: walker hound, walker foxhound.
 
 The mis-identified breeds feature impressive similarities. Comparative images are provided below:
