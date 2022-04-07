@@ -78,7 +78,6 @@ A similar mis-classification was done by AlexNet, as illustrated below:
 
 Conversely, the mis-classifications done exclusively by AlexNet and/or ResNet were of breeds which shared less distinctive features:
 
-![This is an image that compares beagles and english foxhounds](images/dog_comparison3.png)
 ![This is an image that compares boston terriers and basenjis](images/dog_comparison4.png)
 ![This is an image that compares golden retrievers and tibetan mastiffs](images/dog_comparison5.png)
 ![This is an image that compares golden retrievers and afghan hounds](images/dog_comparison6.png)
