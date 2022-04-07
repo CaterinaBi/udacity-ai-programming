@@ -81,7 +81,7 @@ def check_creating_pet_image_labels(results_dic):
         #        break
         
         # CaterinaBi: Adds text that explains what is being printed
-        print("Pet image labels and Classifier labels have been created and compared. The match/mismatch results are as follows:")
+        print("\nPet image labels and Classifier labels have been created and compared. The match/mismatch results are as follows:")
 
 
 def check_classifying_images(results_dic):
@@ -99,7 +99,6 @@ def check_classifying_images(results_dic):
                     classifer labels and 0 = no match between labels
     Returns:
      Nothing - just prints to console  
-
     """
         
     # Print explanatory label
@@ -169,7 +168,6 @@ def check_classifying_labels_as_dogs(results_dic):
                             'as-NOT-a' dog.
     Returns:
      Nothing - just prints to console  
-
     """
     if results_dic is None:
         print("* Doesn't Check the Results Dictionary because 'adjust_results4_isadog' hasn't been defined.")
@@ -187,7 +185,7 @@ def check_classifying_labels_as_dogs(results_dic):
         n_notmatch = 0
     
         # Prints all Matches first
-        print("\n     MATCH:")
+        print("\nMATCH:")
         for key in results_dic:
 
             # Prints only if a Match Index 2 == 1
@@ -195,12 +193,12 @@ def check_classifying_labels_as_dogs(results_dic):
 
                 # Increments Match counter
                 n_match += 1
-                print("\n{:>30}: \nReal: {:>26}   Classifier: {:>30}  \nPetLabelDog: {:1d}  ClassLabelDog: {:1d}".format(key,
+                print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
                       results_dic[key][0], results_dic[key][1], results_dic[key][3], 
                       results_dic[key][4]))
 
         # Prints all NOT-Matches next
-        print("\n NOT A MATCH:")
+        print("\nMISMATCH:")
         for key in results_dic:
         
             # Prints only if NOT-a-Match Index 2 == 0 
@@ -208,7 +206,7 @@ def check_classifying_labels_as_dogs(results_dic):
  
                 # Increments Not-a-Match counter
                 n_notmatch += 1
-                print("\n{:>30}: \nReal: {:>26}   Classifier: {:>30}  \nPetLabelDog: {:1d}  ClassLabelDog: {:1d}".format(key,
+                print("\n{}: \nReal: {}   Classifier: {}  \nPetLabelDog: {}  ClassLabelDog: {}".format(key,
                       results_dic[key][0], results_dic[key][1], results_dic[key][3], 
                       results_dic[key][4]))
 
@@ -242,7 +240,6 @@ def check_calculating_results(results_dic, results_stats_dic):
                      and the value is the statistic's value 
     Returns:
      Nothing - just prints to console  
-
     """
     if results_stats_dic is None:
         print("* Doesn't Check the Results Dictionary because 'calculates_results_stats' hasn't been defined.")
