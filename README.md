@@ -53,11 +53,29 @@ The total images to classify were 40, 10 of which were not dogs. The three archi
 
 ### Incorrect dog breed assignments
 
-1- Real: great pyrenees. Classifier: kuvasz.
+1- Target: great pyrenees. Classifier: kuvasz. (VGG, AlexNet, ResNet)
 
-2- Real: beagle. Classifier: walker hound, walker foxhound.
+2- Target: beagle. Classifier: walker hound, walker foxhound. (VGG, AlexNet, ResNet)
 
-The mis-identified breeds feature impressive similarities. Comparative images are provided below:
+3- Target: beagle. Classifier: english foxhound (AlexNet)
+
+4- Target: boston terrier. Classifier: basenji (AlexNet)
+
+5- Target: golden retriever. Classifier: tibetan mastiff (AlexNet)
+
+6- Target: golden retriever. Classifier: afghan hound (AlexNet)
+
+7- Target: golden retriever. Classifier: leonberg (ResNet)
+
+The only breeds mis-identified by the VGG architecture feature impressive similarities. These were also mis-classified by AlexNet and ResNet. Comparative images are provided below:
 
 ![This is an image that compares great pyrenees and kuvaszs](images/dog_comparison1.png)
 ![This is an image that compares beagles and walker hounds](images/dog_comparison2.png)
+
+Conversely, the mis-classifications done exclusively by AlexNet and/or ResNet were of breeds which shared less distinctive features:
+
+![This is an image that compares beagles and english foxhounds](images/dog_comparison3.png)
+![This is an image that compares boston terriers and basenjis](images/dog_comparison4.png)
+![This is an image that compares golden retrievers and tibetan mastiffs](images/dog_comparison5.png)
+![This is an image that compares golden retrievers and afghan hounds](images/dog_comparison6.png)
+![This is an image that compares golden retrievers and leonbergs](images/dog_comparison7.png)
