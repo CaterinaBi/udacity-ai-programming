@@ -96,4 +96,20 @@ However, the running time of VGG was considerably greater than those of AlexNet 
 
 The last task required by the project was selecting and uploading four additional pictures to the program, and test how the architectures perform with them. The requirements were that the images be squares, had a .jpg extension, and featured: one dog whose breed we knew, one animal which was not a dog, one object, and one horizontally-flipped version of the selected dog image. My choices were the following:
 
+**Photo 1, dog (pug):**
+
+![This is an image of a pug](images/Dog_01.jpn)
+
+**Photo 2, cat (maine coon):**
+
+![This is an image of a maine coon](images/Maine_coon_01.jpn)
+
+**Photo 3, coffee mug:**
+
+![This is an image of a coffee mug](images/Coffee_mug_01.jpn)
+
+**Photo 4, horizontally-flipped version of Photo 1:**
+
+![This is a horizontally-flipped version of the image of a pug above](images/Dog_02.jpn)
+
 
