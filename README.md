@@ -93,3 +93,7 @@ Of the three architectures, VGG was by far best in all classification tasks. It 
 However, the running time of VGG was considerably greater than those of AlexNet and Resnet: respectively, the three architectures took 35", 6" and 3" to perform the task. I would be curious to test the three architectures on a wider range of images.
 
 ## Additional task: Uploading 4 new images to further test the performance of the three architectures
+
+The last task required by the project was selecting and uploading four additional pictures to the program, and test how the architectures perform with them. The requirements were that the images be squares, had a .jpg extension, and featured: one dog whose breed we knew, one animal which was not a dog, one object, and one horizontally-flipped version of the selected dog image. My choices were the following:
+
+
