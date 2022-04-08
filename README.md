@@ -25,6 +25,8 @@ It is known that certain breeds of dogs look very similar. Udacity warned us abo
 
 ## Program Outline
 
+The capstone project required us to do the following:
+
 1. Time the program
    - Use Time Module to compute program runtime
 2. Get program Inputs from the user
@@ -36,14 +38,14 @@ It is known that certain breeds of dogs look very similar. Udacity warned us abo
    - Use the Classifier function to classify the images and create the classifier labels
    - Compare Classifier Labels to Pet Image Labels
    - Store Pet Labels, Classifier Labels, and their comparison in a complex data structure (e.g. dictionary of lists)
-5. Classifying Labels as "Dogs" or "Not Dogs"
-   - Classify all Labels as "Dogs" or "Not Dogs" using dognames.txt file
+5. Classifying Labels as 'dogs' or 'not Dogs'
+   - Classify all Labels as 'dogs' or 'not dogs' using a dognames.txt file
    - Store new classifications in the complex data structure (e.g. dictionary of lists)
 6. Calculate the Results
    - Use Labels and their classifications to determine how well the algorithm worked on classifying images
 7. Print the Results
 
-The tasks in 1-7 were to be repeated for each of the three image classification algorithms provided.
+The tasks in 1-7 were to be repeated for each of the three image classification architectures mentioned above.
 
 ## Results
 
