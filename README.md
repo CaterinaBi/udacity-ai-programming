@@ -116,4 +116,12 @@ The task could be performed using the command `sh run_models_batch_uploaded.sh`,
 
 ### Results
 
-[upcoming]
+The classifications provided by the three architectures are in the table below. I use orange for errors in the recognition of breeds within the right species (e.g., a pug mistaken for a bull terrier), and red for species mistakes (e.g., a main coon mistaken for a leonberg):
+
+![This is a table of classifications](images/results2.png)
+
+The summary statistics are as follows:
+
+![This is a table of statistics for the second classification task](images/statistics.png)
+
+VGG and ResNet performed identically in this task, although with expectedly different runtimes of 6" and 3", respectively. Conversely, AlexNet performed poorly, despite the brilliant runtime of 0" - to the point that it incorrectly mistook a cat (maine coon) for a dog (leonberg).
