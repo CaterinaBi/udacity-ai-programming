@@ -125,3 +125,25 @@ The summary statistics are as follows:
 ![This is a table of statistics for the second classification task](images/statistics.png)
 
 VGG and ResNet performed identically in this task, although with expectedly different runtimes of 6" and 3", respectively. Conversely, AlexNet performed poorly, despite the brilliant runtime of 0" - to the point that it incorrectly mistook a cat (maine coon) for a dog (leonberg).
+
+## Final questions
+
+The project required the programmer to answer the following four questions before submission, which were related to the performances of the three model architectures in the last classification. My conclusion was that, because of its runtime, the overall best-performing architecture was ResNet.
+
+**Questions regarding Uploaded Image Classification:**
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: Yes, the three model architectures correctly classified Dog_01.jpg as 'pug'.
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: VGG and ResNet correctly identified Dog_01.jpg and Dog_02.jpg as 'pug' (note that I actually changed the filenames to Pug_01.jpg and Pug.02.jpg, to obtain right breed classifications). Conversely, AlexNet classified Dog_01.jpg as 'pug' and Dog_02.jpg as 'bull mastiff'.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: The three model architectures identified the object picture as a non-dog, and correctly classified it as a 'coffee mug'. Conversely, the cat picture was only identified as non-dog by VGG and ResNet, while AlexNet classified it as a dog, 'leonberg'.
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer: VGG and ResNet identified correctly 75% of images. Both were wrong in the identification of the breed of the cat ('maine coon'), which they classified as 'tabby' and 'tiger cat', respectively. Nonetheless, both models identified the cat as such, and did not mistake it for a dog. Overall, the best-performing model architecture for this task was ResNet, because of its runtime of 00:00:03. Indeed, VGG took twice the time to complete the task, 00:00:06.
