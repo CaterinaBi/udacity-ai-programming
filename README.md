@@ -112,4 +112,8 @@ The last task required by the project was selecting and uploading four additiona
 
 ![This is a horizontally-flipped version of the image of a pug above](program/uploaded_images/Dog_02.jpg)
 
+The task could be performed using the command `sh run_models_batch_uploaded.sh`, which created three text files with the results for each architecture: `vgg_uploaded-images.txt`, `alexnet_uploaded-images.txt`, and `resnet_uploaded-images.txt`.
 
+### Results
+
+[upcoming]
