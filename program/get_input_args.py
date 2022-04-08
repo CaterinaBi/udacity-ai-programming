@@ -1,6 +1,6 @@
 # PROGRAMMER: CaterinaBi
 # DATE CREATED: 31.03.2022                                
-# REVISED DATE: 
+# REVISED DATE: 08.04.2022
 # PURPOSE: Create a function that retrieves the following 3 command line inputs 
 #          from the user using the Argparse Python module. If the user fails to 
 #          provide some or all of the 3 inputs, then the default values are
