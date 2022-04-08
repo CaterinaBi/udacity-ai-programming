@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: CaterinaBi
 # DATE CREATED: 04.04.2022                                 
-# REVISED DATE: 
+# REVISED DATE: 08.04.2022
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
