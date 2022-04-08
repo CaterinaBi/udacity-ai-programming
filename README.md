@@ -88,7 +88,7 @@ While one of the classifications done by AlexNet, which classified a boston terr
 
 ### Comments on the results
 
-Of the three architectures, VGG was by far best in all classification tasks. It indeed classified correctly all 'dogs' vs. 'non dogs', like AlexNet, while ResNet only scored 90% in the identification of 'non dogs'. VGG was also impressive at identifying dog breeds, where it scored 93.33%, and mis-indentified two images with very similar breeds (great pyrenees with kuvaszs, and beagles with walker hounds). AlexNet and ResNet made less obvious mistakes, with AlexNet going as far as mis-identifying two dog breeds which don't event share the same fur colours.
+Of the three architectures, VGG was by far best in all classification tasks. It indeed classified correctly all 'dogs' vs. 'non dogs', like AlexNet, while ResNet only scored 90% in the identification of 'non dogs'. VGG was also impressive at identifying dog breeds, where it scored 93.33%, and mis-indentified two images with very similar breeds (great pyrenees with kuvaszs, and beagles with walker hounds). AlexNet and ResNet made less obvious mistakes, with AlexNet going as far as mis-identifying two dog breeds which don't have similar fur colours.
 
 However, the running time of VGG was considerably greater than those of AlexNet and Resnet: respectively, the three architectures took 35", 6" and 3" to perform the task. I would be curious to test the three architectures on a wider range of images.
 
