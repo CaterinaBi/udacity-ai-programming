@@ -98,18 +98,18 @@ The last task required by the project was selecting and uploading four additiona
 
 **Photo 1, dog (pug):**
 
-![This is an image of a pug](program/uploaded_images/Dog_01.jpn)
+![This is an image of a pug](program/uploaded_images/Dog_01.jpg)
 
 **Photo 2, cat (maine coon):**
 
-![This is an image of a maine coon](program/uploaded_images/Maine_coon_01.jpn)
+![This is an image of a maine coon](program/uploaded_images/Maine_coon_01.jpg)
 
 **Photo 3, coffee mug:**
 
-![This is an image of a coffee mug](program/uploaded_images/Coffee_mug_01.jpn)
+![This is an image of a coffee mug](program/uploaded_images/Coffee_mug_01.jpg)
 
 **Photo 4, horizontally-flipped version of Photo 1:**
 
-![This is a horizontally-flipped version of the image of a pug above](program/uploaded_images/Dog_02.jpn)
+![This is a horizontally-flipped version of the image of a pug above](program/uploaded_images/Dog_02.jpg)
 
 
